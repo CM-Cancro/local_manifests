@@ -3,20 +3,28 @@
 
  <remote name="bitbucket"
          fetch="https://bitbucket.org/" />
- 
- <!-- Hammerheadcaf cm repos -->
- <project path="device/lge/hammerheadcaf" name="CyanogenMod/android_device_lge_hammerheadcaf" />
- <project path="kernel/lge/hammerhead" name="CyanogenMod/android_kernel_lge_hammerhead" revision="cm-12.1-caf" />
- <project path="device/qcom/common" name="CyanogenMod/android_device_qcom_common" />
- 
- <!-- Hammerheadcaf themuppets blobs -->
- <project path="vendor/lge" name="TheMuppets/proprietary_vendor_lge" />
 
  <!-- Use custom android_build -->
  <remove-project name="CyanogenMod/android_build" />
  <project path="build" name="MrBaNkS/android_build" >
     <copyfile src="core/root.mk" dest="Makefile" />
  </project>
+ 
+ <!-- Hammerheadcaf cm repos -->
+ <project path="device/lge/hammerheadcaf" name="CyanogenMod/android_device_lge_hammerheadcaf" />
+ <project path="kernel/lge/hammerhead" name="CyanogenMod/android_kernel_lge_hammerhead" revision="cm-12.1-caf" />
+ <project path="device/qcom/common" name="CyanogenMod/android_device_qcom_common" />
+ 
+ <!-- Hammerheadcaf cm blobs -->
+ <project path="vendor/lge" name="TheMuppets/proprietary_vendor_lge" />
+
+ <!-- Use modified art with violation fixes -->
+ <remove-project name="CyanogenMod/android_art" />
+ <project path="art" name="MrBaNkS/android_art" />
+
+ <!-- Use modified bionic with violation fixes -->
+ <remove-project name="CyanogenMod/android_bionic" />
+ <project path="bionic" name="MrBaNkS/android_bionic" />
 
  <!-- Use Google host tc 4.8 master -->
  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" remote="aosp" revision="master" />
