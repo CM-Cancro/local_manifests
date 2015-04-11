@@ -4,7 +4,7 @@
  <remote name="bitbucket"
          fetch="https://bitbucket.org/" />
 
- <!-- Use custom android_build -->
+ <!-- Use custom android_build with optimizations -->
  <remove-project name="CyanogenMod/android_build" />
  <project path="build" name="MrBaNkS/android_build" >
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -14,8 +14,6 @@
  <project path="device/lge/hammerheadcaf" name="CyanogenMod/android_device_lge_hammerheadcaf" />
  <project path="kernel/lge/hammerhead" name="CyanogenMod/android_kernel_lge_hammerhead" revision="cm-12.1-caf" />
  <project path="device/qcom/common" name="CyanogenMod/android_device_qcom_common" />
- 
- <!-- Hammerheadcaf cm blobs -->
  <project path="vendor/lge" name="TheMuppets/proprietary_vendor_lge" />
 
  <!-- Use modified art with violation fixes -->
@@ -35,15 +33,5 @@
 
  <!-- Uber arm-linux-androideabi-4.9 tc -->
  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="UBERTC/arm-linux-androideabi-4.9" remote="bitbucket" revision="master" />
-
- <!-- Patched skia and chromium org repos for ffast_math optimization -->
- <remove-project name="CyanogenMod/android_external_chromium_org" />
- <project path="external/chromium_org" name="MrBaNkS/android_external_chromium_org" />
- <remove-project name="platform/external/chromium_org/third_party/WebKit" />
- <project path="external/chromium_org/third_party/WebKit" name="MrBaNkS/android_external_chromium_org_third_party_WebKit" />
- <remove-project name="platform/external/chromium_org/third_party/skia" />
- <project path="external/chromium_org/third_party/skia" name="MrBaNkS/android_external_chromium_org_third_party_skia" />
- <remove-project name="CyanogenMod/android_external_skia" />
- <project path="external/skia" name="MrBaNkS/android_external_skia" />
 
 </manifest>
