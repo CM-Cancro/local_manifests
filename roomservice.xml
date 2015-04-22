@@ -10,8 +10,10 @@
     <copyfile src="core/root.mk" dest="Makefile" />
  </project>
  
+ <!-- Use custom Hammerhead device repo -->
+ <project path="device/lge/hammerhead" name="MrBaNkS/android_device_lge_hammerhead" />
+ 
  <!-- Hammerhead repos -->
- <project path="device/lge/hammerhead" name="CyanogenMod/android_device_lge_hammerhead" />
  <project path="kernel/lge/hammerhead" name="CyanogenMod/android_kernel_lge_hammerhead" />
  <project path="device/qcom/common" name="CyanogenMod/android_device_qcom_common" />
  <project path="vendor/lge" name="TheMuppets/proprietary_vendor_lge" />
