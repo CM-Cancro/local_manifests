@@ -25,6 +25,10 @@
  <!-- Use modified bionic with violation fixes -->
  <remove-project name="CyanogenMod/android_bionic" />
  <project path="bionic" name="MrBaNkS/android_bionic" />
+ 
+ <!-- Use modified stlport with violation fixes -->
+ <remove-project name="platform/external/stlport" />
+ <project path="external/stlport" name="MrBaNkS/android_external_stlport" />
 
  <!-- Use Google host tc 4.8 master -->
  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" remote="aosp" revision="master" />
