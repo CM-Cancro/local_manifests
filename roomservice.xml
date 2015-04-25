@@ -4,40 +4,38 @@
  <remote name="bitbucket"
          fetch="https://bitbucket.org/" />
 
- <!-- Use custom android_build with optimizations -->
+ <!-- Modified build with optimizations -->
  <remove-project name="CyanogenMod/android_build" />
  <project path="build" name="MrBaNkS/android_build" >
     <copyfile src="core/root.mk" dest="Makefile" />
  </project>
- 
- <!-- Use custom Hammerhead device repo -->
- <project path="device/lge/hammerhead" name="MrBaNkS/android_device_lge_hammerhead" />
- 
- <!-- Hammerhead repos -->
- <project path="kernel/lge/hammerhead" name="CyanogenMod/android_kernel_lge_hammerhead" />
+
+ <!-- Hammerheadcaf repos -->
+ <project path="device/lge/hammerheadcaf" name="CyanogenMod/android_device_lge_hammerheadcaf" />
+ <project path="kernel/lge/hammerhead" name="CyanogenMod/android_kernel_lge_hammerhead" revision="cm-12.1-caf" />
  <project path="device/qcom/common" name="CyanogenMod/android_device_qcom_common" />
  <project path="vendor/lge" name="TheMuppets/proprietary_vendor_lge" />
 
- <!-- Use modified art with violation fixes -->
+ <!-- Modified art with violation fixes -->
  <remove-project name="CyanogenMod/android_art" />
  <project path="art" name="MrBaNkS/android_art" />
 
- <!-- Use modified bionic with violation fixes -->
+ <!-- Modified bionic with violation fixes -->
  <remove-project name="CyanogenMod/android_bionic" />
  <project path="bionic" name="MrBaNkS/android_bionic" />
  
- <!-- Use modified stlport with violation fixes -->
+ <!-- Modified stlport with violation fixes -->
  <remove-project name="platform/external/stlport" />
  <project path="external/stlport" name="MrBaNkS/android_external_stlport" />
 
- <!-- Use Google host tc 4.8 master -->
+ <!-- Google host 4.8 master -->
  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" remote="aosp" revision="master" />
 
- <!-- Use Uber arm-eabi-4.8 tc for kernel -->
+ <!-- Uber arm-eabi-4.8 -->
  <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" />
  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="UBERTC/arm-eabi-4.8" remote="bitbucket" revision="master" />
 
- <!-- Uber arm-linux-androideabi-4.9 tc -->
+ <!-- Uber arm-linux-androideabi-4.9 -->
  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="UBERTC/arm-linux-androideabi-4.9" remote="bitbucket" revision="master" />
 
 </manifest>
