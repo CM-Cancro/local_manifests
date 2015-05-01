@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+ 
+ <remote name="bitbucket" fetch="https://bitbucket.org/" />
 
  <!-- Modified build with optimizations -->
  <remove-project name="CyanogenMod/android_build" />
@@ -30,9 +32,9 @@
 
  <!-- Uber arm-eabi-4.8 -->
  <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" />
- <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="MrBaNkS/arm-eabi-4.8-cortex-a15" revision="master" />
+ <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="UBERTC/arm-eabi-4.8" remote="bitbucket" revision="master" />
 
  <!-- Uber arm-linux-androideabi-4.9 -->
- <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="MrBaNkS/arm-linux-androideabi-4.9-cortex-a15" revision="master" />
+ <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="UBERTC/arm-linux-androideabi-4.9" remote="bitbucket" revision="master" />
 
 </manifest>
