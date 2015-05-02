@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
  
+ <!-- BitBucket remote -->
  <remote name="bitbucket" fetch="https://bitbucket.org/" />
+ 
+ <!-- Hammerheadcaf repos -->
+ <project path="device/lge/hammerheadcaf" name="CyanogenMod/android_device_lge_hammerheadcaf" />
+ <project path="kernel/lge/hammerhead" name="CyanogenMod/android_kernel_lge_hammerhead" revision="cm-12.1-caf" />
+ <project path="device/qcom/common" name="CyanogenMod/android_device_qcom_common" />
+ <project path="vendor/lge" name="TheMuppets/proprietary_vendor_lge" />
 
  <!-- Modified build with optimizations -->
  <remove-project name="CyanogenMod/android_build" />
  <project path="build" name="MrBaNkS/android_build" >
     <copyfile src="core/root.mk" dest="Makefile" />
  </project>
-
- <!-- Hammerheadcaf repos -->
- <project path="device/lge/hammerheadcaf" name="CyanogenMod/android_device_lge_hammerheadcaf" />
- <project path="kernel/lge/hammerhead" name="CyanogenMod/android_kernel_lge_hammerhead" revision="cm-12.1-caf" />
- <project path="device/qcom/common" name="CyanogenMod/android_device_qcom_common" />
- <project path="vendor/lge" name="TheMuppets/proprietary_vendor_lge" />
+ 
+ <!-- Modified bootable recovery with GCC 5.1 fixes -->
+ <remove-project name="CyanogenMod/android_bootable_recovery" />
+ <project path="bootable/recovery" name="MrBaNkS/android_bootable_recovery" />
 
  <!-- Modified art with violation fixes -->
  <remove-project name="CyanogenMod/android_art" />
@@ -23,6 +28,10 @@
  <remove-project name="CyanogenMod/android_bionic" />
  <project path="bionic" name="MrBaNkS/android_bionic" />
  
+ <!-- Modified chromium webkit with GCC 5.1 fixes -->
+ <remove-project name="platform/external/chromium_org/third_party/WebKit" />
+ <project path="external/chromium_org/third_party/WebKit" name="MrBaNkS/android_external_chromium_org_third_party_WebKit" />
+ 
  <!-- Modified libcxx with GCC 5.1 fixes -->
  <remove-project name="platform/external/libcxx" />
  <project path="external/libcxx" name="MrBaNkS/android_external_libcxx" />
@@ -31,7 +40,7 @@
  <remove-project name="platform/external/stlport" />
  <project path="external/stlport" name="MrBaNkS/android_external_stlport" />
  
- <!-- Modified system cote with violation fixes -->
+ <!-- Modified system core with violation fixes -->
  <remove-project name="CyanogenMod/android_system_core" />
  <project path="system/core" name="MrBaNkS/android_system_core" />
 
