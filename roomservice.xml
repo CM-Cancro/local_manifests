@@ -40,6 +40,10 @@
  <remove-project name="platform/external/stlport" />
  <project path="external/stlport" name="MrBaNkS/android_external_stlport" />
  
+ <!-- Modified frameworks av with violations fixes -->
+ <remove-project name="CyanogenMod/android_frameworks_av" />
+ <project path="frameworks/av" name="MrBaNkS/android_frameworks_av" />
+ 
  <!-- Modified system core with violation fixes -->
  <remove-project name="CyanogenMod/android_system_core" />
  <project path="system/core" name="MrBaNkS/android_system_core" />
