@@ -23,9 +23,17 @@
  <remove-project name="CyanogenMod/android_bionic" />
  <project path="bionic" name="MrBaNkS/android_bionic" />
  
+ <!-- Modified libcxx with GCC 5.1 fixes -->
+ <remove-project name="platform/external/libcxx" />
+ <project path="external/libcxx" name="MrBaNkS/android_external_libcxx" />
+ 
  <!-- Modified stlport with violation fixes -->
  <remove-project name="platform/external/stlport" />
  <project path="external/stlport" name="MrBaNkS/android_external_stlport" />
+ 
+ <!-- Modified system cote with violation fixes -->
+ <remove-project name="CyanogenMod/android_system_core" />
+ <project path="system/core" name="MrBaNkS/android_system_core" />
 
  <!-- Google host 4.8 master -->
  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" remote="aosp" revision="master" />
@@ -35,6 +43,9 @@
  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="UBERTC/arm-eabi-4.8" remote="bitbucket" revision="master" />
 
  <!-- Uber arm-linux-androideabi-4.9 -->
- <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="UBERTC/arm-linux-androideabi-5.1" remote="bitbucket" revision="master" />
+ <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="UBERTC/arm-linux-androideabi-4.9" remote="bitbucket" revision="master" />
+ 
+ <!-- Uber arm-linux-androideabi-5.1 -->
+ <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.1" name="UBERTC/arm-linux-androideabi-5.1" remote="bitbucket" revision="master" />
 
 </manifest>
