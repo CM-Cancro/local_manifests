@@ -20,7 +20,7 @@
 
  <!-- Modified curl with violation fixes -->
  <remove-project name="CyanogenMod/android_external_curl" />
- <project path="bionic" name="Opticancro/android_external_curl" />
+ <project path="external/curl" name="Opticancro/android_external_curl" />
 
  <!-- Modified build with optimizations -->
  <remove-project name="CyanogenMod/android_build" />
