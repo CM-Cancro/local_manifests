@@ -3,24 +3,14 @@
  
  <!-- BitBucket remote -->
  <remote name="bitbucket" fetch="https://bitbucket.org/" />
- 
- <!-- Hammerheadcaf repos 
- <project path="device/lge/hammerheadcaf" name="CyanogenMod/android_device_lge_hammerheadcaf" />
- <project path="kernel/lge/hammerhead" name="CyanogenMod/android_kernel_lge_hammerhead" revision="cm-12.1-caf" />
- <project path="device/qcom/common" name="CyanogenMod/android_device_qcom_common" />
- <project path="vendor/lge" name="TheMuppets/proprietary_vendor_lge" /> -->
 
  <!-- Cancro repos -->
- <project path="device/xiaomi/cancro" name="Opticancro/android_device_xiaomi_cancro" revision="cm-12.1"/>
+ <project path="device/xiaomi/cancro" name="Opticancro/android_device_xiaomi_cancro" />
  <project path="kernel/xiaomi/cancro" name="Opticancro/kernel_cancro" revision="cm-12.1-staging" />
- <project path="vendor/xiaomi" name="Opticancro/proprietary_vendor_xiaomi" revision="cm-12.0" />
+ <project path="vendor/xiaomi" name="Opticancro/proprietary_vendor_xiaomi" />
 
  <!-- CM Repos for Cancro -->
-<project name="CyanogenMod/android_device_qcom_common" path="device/qcom/common" revision="cm-12.1" />
-
- <!-- Modified curl with violation fixes -->
- <remove-project name="CyanogenMod/android_external_curl" />
- <project path="external/curl" name="Opticancro/android_external_curl" />
+<project name="CyanogenMod/android_device_qcom_common" path="device/qcom/common" />
 
  <!-- Modified build with optimizations -->
  <remove-project name="CyanogenMod/android_build" />
@@ -39,6 +29,10 @@
  <!-- Modified chromium webkit with GCC 5.1 fixes -->
  <remove-project name="platform/external/chromium_org/third_party/WebKit" />
  <project path="external/chromium_org/third_party/WebKit" name="Opticancro/android_external_chromium_org_third_party_WebKit" />
+
+ <!-- Modified curl with violation fixes -->
+ <remove-project name="CyanogenMod/android_external_curl" />
+ <project path="external/curl" name="Opticancro/android_external_curl" />
  
  <!-- Modified libcxx with GCC 5.1 fixes -->
  <remove-project name="platform/external/libcxx" />
