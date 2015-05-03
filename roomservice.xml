@@ -6,7 +6,7 @@
 
  <!-- Cancro repos -->
  <project path="device/xiaomi/cancro" name="Opticancro/android_device_xiaomi_cancro" />
- <project path="kernel/xiaomi/cancro" name="Opticancro/kernel_cancro" revision="cm-12.1-staging" />
+ <project path="kernel/xiaomi/cancro" name="Opticancro/android_kernel_xiaomi_cancro" revision="cm-12.1-staging" />
  <project path="vendor/xiaomi" name="Opticancro/proprietary_vendor_xiaomi" />
 
  <!-- CM Repos for Cancro -->
