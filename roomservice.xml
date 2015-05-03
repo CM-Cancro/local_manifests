@@ -10,7 +10,7 @@
  <project path="vendor/xiaomi" name="Opticancro/proprietary_vendor_xiaomi" />
 
  <!-- CM Repos for Cancro -->
-<project name="CyanogenMod/android_device_qcom_common" path="device/qcom/common" />
+<project path="device/qcom/common" name="CyanogenMod/android_device_qcom_common" />
 
  <!-- Modified build with optimizations -->
  <remove-project name="CyanogenMod/android_build" />
@@ -29,10 +29,6 @@
  <!-- Modified chromium webkit with GCC 5.1 fixes -->
  <remove-project name="platform/external/chromium_org/third_party/WebKit" />
  <project path="external/chromium_org/third_party/WebKit" name="Opticancro/android_external_chromium_org_third_party_WebKit" />
-
- <!-- Modified curl with violation fixes -->
- <remove-project name="CyanogenMod/android_external_curl" />
- <project path="external/curl" name="Opticancro/android_external_curl" />
  
  <!-- Modified libcxx with GCC 5.1 fixes -->
  <remove-project name="platform/external/libcxx" />
