@@ -20,10 +20,6 @@
  <remove-project name="CyanogenMod/android_bootable_recovery" />
  <project path="bootable/recovery" name="MrBaNkS/android_bootable_recovery" />
 
- <!-- Modified art with violation fixes -->
- <remove-project name="CyanogenMod/android_art" />
- <project path="art" name="MrBaNkS/android_art" />
-
  <!-- Modified bionic with violation fixes -->
  <remove-project name="CyanogenMod/android_bionic" />
  <project path="bionic" name="MrBaNkS/android_bionic" />
