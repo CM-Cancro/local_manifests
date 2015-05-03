@@ -18,40 +18,43 @@
  <!-- CM Repos for Cancro -->
 <project name="CyanogenMod/android_device_qcom_common" path="device/qcom/common" revision="cm-12.1" />
 
+ <!-- Modified curl with violation fixes -->
+ <remove-project name="CyanogenMod/android_external_curl" />
+ <project path="bionic" name="Opticancro/android_external_curl" />
 
  <!-- Modified build with optimizations -->
  <remove-project name="CyanogenMod/android_build" />
- <project path="build" name="MrBaNkS/android_build" >
+ <project path="build" name="Opticancro/android_build" >
     <copyfile src="core/root.mk" dest="Makefile" />
  </project>
  
  <!-- Modified bootable recovery with GCC 5.1 fixes -->
  <remove-project name="CyanogenMod/android_bootable_recovery" />
- <project path="bootable/recovery" name="MrBaNkS/android_bootable_recovery" />
+ <project path="bootable/recovery" name="Opticancro/android_bootable_recovery" />
 
  <!-- Modified bionic with violation fixes -->
  <remove-project name="CyanogenMod/android_bionic" />
- <project path="bionic" name="MrBaNkS/android_bionic" />
+ <project path="bionic" name="Opticancro/android_bionic" />
  
  <!-- Modified chromium webkit with GCC 5.1 fixes -->
  <remove-project name="platform/external/chromium_org/third_party/WebKit" />
- <project path="external/chromium_org/third_party/WebKit" name="MrBaNkS/android_external_chromium_org_third_party_WebKit" />
+ <project path="external/chromium_org/third_party/WebKit" name="Opticancro/android_external_chromium_org_third_party_WebKit" />
  
  <!-- Modified libcxx with GCC 5.1 fixes -->
  <remove-project name="platform/external/libcxx" />
- <project path="external/libcxx" name="MrBaNkS/android_external_libcxx" />
+ <project path="external/libcxx" name="Opticancro/android_external_libcxx" />
  
  <!-- Modified stlport with violation fixes -->
  <remove-project name="platform/external/stlport" />
- <project path="external/stlport" name="MrBaNkS/android_external_stlport" />
+ <project path="external/stlport" name="Opticancro/android_external_stlport" />
  
  <!-- Modified frameworks av with violations fixes -->
  <remove-project name="CyanogenMod/android_frameworks_av" />
- <project path="frameworks/av" name="MrBaNkS/android_frameworks_av" />
+ <project path="frameworks/av" name="Opticancro/android_frameworks_av" />
  
  <!-- Modified system core with violation fixes -->
  <remove-project name="CyanogenMod/android_system_core" />
- <project path="system/core" name="MrBaNkS/android_system_core" />
+ <project path="system/core" name="Opticancro/android_system_core" />
 
  <!-- Google host 4.8 master -->
  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" remote="aosp" revision="master" />
