@@ -25,6 +25,10 @@
  <!-- Modified art with violation fixes -->
  <remove-project name="CyanogenMod/android_art" />
  <project path="art" name="Opticancro/android_art" />
+ 
+  <!-- Modified sqlite -->
+ <remove-project name="CyanogenMod/android_external_sqlite" />
+ <project path="external/sqlite" name="Opticancro/android_external_sqlite" />
 
  <!-- Modified bionic with violation fixes -->
  <remove-project name="CyanogenMod/android_bionic" />
