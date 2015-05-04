@@ -18,9 +18,13 @@
     <copyfile src="core/root.mk" dest="Makefile" />
  </project>
  
- <!-- Modified bootable recovery with GCC 5.1 fixes -->
+ <!-- Modified TWRP bootable recovery with GCC 5.1 fixes -->
  <remove-project name="CyanogenMod/android_bootable_recovery" />
  <project path="bootable/recovery" name="Opticancro/android_bootable_recovery" />
+ 
+ <!-- Modified art with violation fixes -->
+ <remove-project name="CyanogenMod/android_art" />
+ <project path="art" name="Opticancro/android_art" />
 
  <!-- Modified bionic with violation fixes -->
  <remove-project name="CyanogenMod/android_bionic" />
