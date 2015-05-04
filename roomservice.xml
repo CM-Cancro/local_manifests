@@ -1,69 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
  
- <!-- BitBucket remote -->
+ <!-- Git remotes -->
  <remote name="bitbucket" fetch="https://bitbucket.org/" />
 
- <!-- Cancro repos -->
+ <!-- Opticancro repos -->
  <project path="device/xiaomi/cancro" name="Opticancro/android_device_xiaomi_cancro" />
  <project path="kernel/xiaomi/cancro" name="Opticancro/android_kernel_xiaomi_cancro" revision="cm-12.1-gcc5" />
  <project path="vendor/xiaomi" name="Opticancro/proprietary_vendor_xiaomi" />
+ 
+ <!-- Needed CM repos for canro -->
+ <project path="device/qcom/common" name="CyanogenMod/android_device_qcom_common" />
 
- <!-- CM Repos for Cancro -->
-<project path="device/qcom/common" name="CyanogenMod/android_device_qcom_common" />
-
- <!-- Modified build with optimizations -->
+ <!-- Modified repos with build optimizations and fixes -->
  <remove-project name="CyanogenMod/android_build" />
  <project path="build" name="Opticancro/android_build" >
     <copyfile src="core/root.mk" dest="Makefile" />
  </project>
- 
- <!-- Modified TWRP bootable recovery with GCC 5.1 fixes -->
  <remove-project name="CyanogenMod/android_bootable_recovery" />
  <project path="bootable/recovery" name="Opticancro/android_bootable_recovery" />
- 
- <!-- Modified art with violation fixes -->
  <remove-project name="CyanogenMod/android_art" />
  <project path="art" name="Opticancro/android_art" />
- 
-  <!-- Modified sqlite -->
- <remove-project name="CyanogenMod/android_external_sqlite" />
- <project path="external/sqlite" name="Opticancro/android_external_sqlite" />
-
- <!-- Modified bionic with violation fixes -->
  <remove-project name="CyanogenMod/android_bionic" />
  <project path="bionic" name="Opticancro/android_bionic" />
- 
- <!-- Modified chromium webkit with GCC 5.1 fixes -->
  <remove-project name="platform/external/chromium_org/third_party/WebKit" />
  <project path="external/chromium_org/third_party/WebKit" name="Opticancro/android_external_chromium_org_third_party_WebKit" />
- 
- <!-- Modified libcxx with GCC 5.1 fixes -->
  <remove-project name="platform/external/libcxx" />
  <project path="external/libcxx" name="Opticancro/android_external_libcxx" />
- 
- <!-- Modified stlport with violation fixes -->
+ <remove-project name="CyanogenMod/android_external_sqlite" />
+ <project path="external/sqlite" name="Opticancro/android_external_sqlite" />
  <remove-project name="platform/external/stlport" />
  <project path="external/stlport" name="Opticancro/android_external_stlport" />
- 
- <!-- Modified frameworks av with violations fixes -->
  <remove-project name="CyanogenMod/android_frameworks_av" />
  <project path="frameworks/av" name="Opticancro/android_frameworks_av" />
- 
- <!-- Modified system core with violation fixes -->
  <remove-project name="CyanogenMod/android_system_core" />
  <project path="system/core" name="Opticancro/android_system_core" />
 
  <!-- Google host 4.8 master -->
  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" remote="aosp" revision="master" />
 
- <!-- Uber arm-eabi-5.1 -->
+ <!-- Uber Toolchains -->
  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-5.1" name="UBERTC/arm-eabi-5.1" remote="bitbucket" revision="master" />
-
- <!-- Uber arm-linux-androideabi-4.9 -->
  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="UBERTC/arm-linux-androideabi-4.9" remote="bitbucket" revision="master" />
- 
- <!-- Uber arm-linux-androideabi-5.1 -->
  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.1" name="UBERTC/arm-linux-androideabi-5.1" remote="bitbucket" revision="master" />
 
 </manifest>
