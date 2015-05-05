@@ -23,6 +23,8 @@
  <project path="art" name="Opticancro/android_art" />
  <remove-project name="CyanogenMod/android_bionic" />
  <project path="bionic" name="Opticancro/android_bionic" />
+ <remove-project name="CyanogenMod/android_external_chromium_org" />
+ <project path="external/chromium_org" name="Opticancro/android_external_chromium_org" />
  <remove-project name="platform/external/chromium_org/third_party/WebKit" />
  <project path="external/chromium_org/third_party/WebKit" name="Opticancro/android_external_chromium_org_third_party_WebKit" />
  <remove-project name="platform/external/libcxx" />
