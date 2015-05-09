@@ -9,57 +9,23 @@
  <project path="kernel/xiaomi/cancro" name="Opticancro/android_kernel_xiaomi_cancro" revision="cm-12.1-gcc6" />
  <project path="vendor/xiaomi" name="Opticancro/proprietary_vendor_xiaomi" />
  
- <!-- Needed CM repos for canro -->
+ <!-- Needed CM repo for canro -->
  <project path="device/qcom/common" name="CyanogenMod/android_device_qcom_common" />
 
- <!-- Needed CM repos for FM Radio App -->
+ <!-- Needed CM repo for FM Radio App -->
  <project path="hardware/qcom/fm" name="CyanogenMod/android_hardware_qcom_fm" />
 
- <!-- Modified repos with build optimizations and fixes -->
+ <!-- Modified build repo-->
  <remove-project name="CyanogenMod/android_build" />
  <project path="build" name="Opticancro/android_build" >
     <copyfile src="core/root.mk" dest="Makefile" />
  </project>
-
+ 
+ <!-- Modified Omnirom TWRP recovery to build with CM -->
  <remove-project name="CyanogenMod/android_bootable_recovery" />
  <project path="bootable/recovery" name="Opticancro/android_bootable_recovery" />
 
- <remove-project name="CyanogenMod/android_art" />
- <project path="art" name="Opticancro/android_art" />
-
- <remove-project name="CyanogenMod/android_bionic" />
- <project path="bionic" name="Opticancro/android_bionic" />
-
- <remove-project name="CyanogenMod/android_external_chromium_org" />
- <project path="external/chromium_org" name="Opticancro/android_external_chromium_org" />
-
- <remove-project name="platform/external/chromium_org/third_party/WebKit" />
- <project path="external/chromium_org/third_party/WebKit" name="Opticancro/android_external_chromium_org_third_party_WebKit" />
-
- <remove-project name="platform/external/libcxx" />
- <project path="external/libcxx" name="Opticancro/android_external_libcxx" />
-
- <remove-project name="CyanogenMod/android_external_sqlite" />
- <project path="external/sqlite" name="Opticancro/android_external_sqlite" />
-
- <remove-project name="platform/external/stlport" />
- <project path="external/stlport" name="Opticancro/android_external_stlport" />
-
- <remove-project name="CyanogenMod/android_frameworks_av" />
- <project path="frameworks/av" name="Opticancro/android_frameworks_av" />
-
- <remove-project name="platform/prebuilts/ndk" />
- <project path="prebuilts/ndk" name="Opticancro/android_prebuilts_ndk" />
-
- <remove-project name="CyanogenMod/android_system_core" />
- <project path="system/core" name="Opticancro/android_system_core" />
-
- <!-- Google host 4.8 master -->
- <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" remote="aosp" revision="master" />
-
- <!-- Uber Toolchains -->
+ <!-- Uber arm-eabi-6.0 for kernel-->
  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-6.0" name="UBERTC/arm-eabi-6.0" remote="bitbucket" revision="master" />
- <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="UBERTC/arm-linux-androideabi-4.9" remote="bitbucket" revision="master" />
- <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-5.1" name="UBERTC/arm-linux-androideabi-5.1" remote="bitbucket" revision="master" />
 
 </manifest>
