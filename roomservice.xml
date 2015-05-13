@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
- 
- <!-- Git remotes -->
- <remote name="bitbucket" fetch="https://bitbucket.org/" />
 
  <!-- Opticancro repos -->
  <project path="device/xiaomi/cancro" name="CM-Cancro/android_device_xiaomi_cancro" />
@@ -14,18 +11,9 @@
 
  <!-- Needed CM repo for FM Radio App -->
  <project path="hardware/qcom/fm" name="CyanogenMod/android_hardware_qcom_fm" />
-
- <!-- Modified build repo-->
- <remove-project name="CyanogenMod/android_build" />
- <project path="build" name="CM-Cancro/android_build" >
-    <copyfile src="core/root.mk" dest="Makefile" />
- </project>
  
  <!-- Modified Omnirom TWRP recovery to build with CM -->
  <remove-project name="CyanogenMod/android_bootable_recovery" />
  <project path="bootable/recovery" name="CM-Cancro/android_bootable_recovery" />
-
- <!-- Uber arm-eabi-6.0 for kernel-->
- <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-6.0" name="UBERTC/arm-eabi-6.0" remote="bitbucket" revision="master" />
 
 </manifest>
