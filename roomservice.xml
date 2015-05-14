@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-
- <!-- Opticancro repos -->
+ <!-- CM-Cancro repos -->
  <project path="device/xiaomi/cancro" name="CM-Cancro/android_device_xiaomi_cancro" />
  <project path="kernel/xiaomi/cancro" name="CM-Cancro/android_kernel_xiaomi_cancro" />
  <project path="vendor/xiaomi" name="CM-Cancro/proprietary_vendor_xiaomi" />
  
- <!-- Needed CM repo for canro -->
+ <!-- Needed CM repo for Cancro -->
  <project path="device/qcom/common" name="CyanogenMod/android_device_qcom_common" />
 
  <!-- Needed CM repo for FM Radio App -->
@@ -15,5 +14,4 @@
  <!-- Modified Omnirom TWRP recovery to build with CM -->
  <remove-project name="CyanogenMod/android_bootable_recovery" />
  <project path="bootable/recovery" name="CM-Cancro/android_bootable_recovery" />
-
 </manifest>
