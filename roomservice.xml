@@ -17,7 +17,11 @@
  <remove-project name="CyanogenMod/android_bootable_recovery" />
  <project path="bootable/recovery" name="CM-Cancro/android_bootable_recovery" />
  
- <!-- Modified CM libpng recovery to build with less log spam -->
+ <!-- Modified CM a/v-framework -->
+ <remove-project name="CyanogenMod/android_frameworks_av" />
+ <project path="frameworks/av" name="CM-Cancro/android_frameworks_av" />
+ 
+ <!-- Modified CM libpng recovery to build with less log spam
  <remove-project name="CyanogenMod/android_external_libpng" />
- <project path="external/libpng" name="CM-Cancro/android_external_libpng" />
+ <project path="external/libpng" name="CM-Cancro/android_external_libpng" />  -->
 </manifest>
