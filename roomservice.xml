@@ -5,7 +5,7 @@
  <project path="vendor/xiaomi" name="CM-Cancro/proprietary_vendor_xiaomi" />
  
  <!-- Stuxnet+ kernel for Cancro -->
- <project path="kernel/xiaomi/cancro" name="emceethemouth/kernel_cancro" revision="cm-12.1-staging" />
+ <project path="kernel/xiaomi/cancro" name="emceethemouth/kernel_cancro" revision="cm-12.1-mainstream" />
  
  <!-- Needed CM repo for Cancro -->
  <project path="device/qcom/common" name="CyanogenMod/android_device_qcom_common" />
