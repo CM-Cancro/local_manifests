@@ -2,18 +2,16 @@
 <manifest>
  
  <!-- CM-Cancro repos -->
- <project path="device/xiaomi/cancro" name="CM-Cancro/android_device_xiaomi_cancro" />
+ <project path="device/xiaomi/cancro" name="CM-Cancro/android_device_xiaomi_cancro" revision="M-Preview" />
  <project path="kernel/xiaomi/cancro" name="CM-Cancro/android_kernel_xiaomi_cancro" />
  <project path="vendor/xiaomi" name="CM-Cancro/proprietary_vendor_xiaomi" />
  
- <!-- Needed CM repo for Cancro -->
- <project path="device/qcom/common" name="CyanogenMod/android_device_qcom_common" />
+ <!-- Needed   repo for Cancro -->
+<project path="device/qcom/common" name="manups4e/android_device_qcom_common" remote="github" revision="M-Preview" />
+<project path="device/qcom/sepolicy" name="manups4e/android_device_qcom_sepolicy" remote="github" revision="M-Preview" />
 
- <!-- Needed CM repo for FM Radio App -->
- <project path="hardware/qcom/fm" name="CyanogenMod/android_hardware_qcom_fm" />
- 
- <!-- Modified Omnirom TWRP recovery to build with CM -->
- <remove-project name="CyanogenMod/android_bootable_recovery" />
- <project path="bootable/recovery" name="CM-Cancro/android_bootable_recovery" />
+<!-- Modified AOSP  repos  :D  -->
+<remove-project name="android_frameworks_webview" />
+<project path="frameworks/webview" name="Omni-Cancro/android_frameworks_webview" remote="github" revision="cm-12.1" />
  
 </manifest>
